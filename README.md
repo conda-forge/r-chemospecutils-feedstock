@@ -14,9 +14,8 @@ Summary: Functions supporting the common needs of packages 'ChemoSpec' and 'Chem
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-chemospecutils-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-chemospecutils-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-chemospecutils-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-chemospecutils-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-chemospecutils-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-chemospecutils-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-chemospecutils-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-chemospecutils-feedstock)
 
 Current release info
 ====================
