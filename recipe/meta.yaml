@@ -1,4 +1,4 @@
-{% set version = '0.1.62' %}
+{% set version = '0.2.204' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: ChemoSpecUtils_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/ChemoSpecUtils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ChemoSpecUtils/ChemoSpecUtils_{{ version }}.tar.gz
-  sha256: 1ee475a9faf52a1cba501005499e3e956104551ee5b21e65f3b6f510fd5f5379
+  sha256: a05f3d90a1fea7e301cce367ec8e19aafe05c2f0235a45a465d853f147848348
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -27,11 +26,13 @@ requirements:
   host:
     - r-base
     - r-rcolorbrewer
+    - r-amap
     - r-plyr
     - r-robustbase
   run:
     - r-base
     - r-rcolorbrewer
+    - r-amap
     - r-plyr
     - r-robustbase
 
@@ -49,9 +50,26 @@ about:
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
+    - conda-forge/r
+
+# Package: ChemoSpecUtils
+# Type: Package
+# Title: Functions Supporting Packages ChemoSpec and ChemoSpec2D
+# Version: 0.2.204
+# Date: 2018-12-19
+# Authors@R: c( person("Bryan A.", "Hanson", role = c("aut", "cre"), email = "hanson@depauw.edu", comment = "ORCID 0000-0003-3536-8246"))
+# Description: Functions supporting the common needs of packages 'ChemoSpec' and 'ChemoSpec2D'.
+# License: GPL-3
+# Depends: R (>= 3.1)
+# Suggests: ChemoSpec (>= 5.0), ChemoSpec2D, testthat
+# Imports: plyr, robustbase, RColorBrewer, amap
+# URL: https://github.com/bryanhanson/ChemoSpecUtils
+# BugReports: https://github.com/bryanhanson/ChemoSpecUtils/issues
+# ByteCompile: TRUE
+# RoxygenNote: 6.1.1
+# NeedsCompilation: no
+# Packaged: 2018-12-19 15:08:31 UTC; bryanhanson
+# Author: Bryan A. Hanson [aut, cre] (ORCID 0000-0003-3536-8246)
+# Maintainer: Bryan A. Hanson <hanson@depauw.edu>
+# Repository: CRAN
+# Date/Publication: 2018-12-19 16:10:03 UTC
