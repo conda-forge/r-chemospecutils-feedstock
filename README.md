@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About r-chemospecutils
 ======================
 
@@ -18,8 +14,15 @@ Summary: Functions supporting the common needs of packages 'ChemoSpec' and 'Chem
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-chemospecutils-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-chemospecutils-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1029&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-chemospecutils-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
