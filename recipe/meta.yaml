@@ -1,4 +1,4 @@
-{% set version = "0.3.60" %}
+{% set version = "0.4.38" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ChemoSpecUtils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ChemoSpecUtils/ChemoSpecUtils_{{ version }}.tar.gz
-  sha256: f82b50c5e0531e38e053a004dda28442e14d97373a85f143d6dfd7d8bea03a1e
+  sha256: ff531dccae59391050c64b5cdbd6f2d11776cd2f2cd46c61e0d16a1988feecac
 
 build:
   merge_build_host: True  # [win]
