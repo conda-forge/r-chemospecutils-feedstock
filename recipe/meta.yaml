@@ -1,4 +1,4 @@
-{% set version = "0.4.38" %}
+{% set version = "0.4.51" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ChemoSpecUtils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ChemoSpecUtils/ChemoSpecUtils_{{ version }}.tar.gz
-  sha256: ff531dccae59391050c64b5cdbd6f2d11776cd2f2cd46c61e0d16a1988feecac
+  sha256: afc482e59bf25d13d748f35ec96fb3c67d0bc3ec5486469f513e9a3ab1d99f73
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -22,7 +22,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-rcolorbrewer
@@ -46,7 +46,7 @@ about:
   license: GPL-3
   summary: Functions supporting the common needs of packages 'ChemoSpec' and 'ChemoSpec2D'.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
