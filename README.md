@@ -3,7 +3,7 @@ About r-chemospecutils
 
 Home: https://github.com/bryanhanson/ChemoSpecUtils
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-chemospecutils-feedstock/blob/master/LICENSE.txt)
 
@@ -36,6 +36,7 @@ Installing `r-chemospecutils` from the `conda-forge` channel can be achieved by 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-chemospecutils` can be installed with:
