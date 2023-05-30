@@ -1,11 +1,11 @@
-About r-chemospecutils
-======================
+About r-chemospecutils-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-chemospecutils-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/bryanhanson/ChemoSpecUtils
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-chemospecutils-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions supporting the common needs of packages 'ChemoSpec' and 'ChemoSpec2D'.
 
